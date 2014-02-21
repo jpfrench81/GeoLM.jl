@@ -1,5 +1,3 @@
-using Stats
-
 # define type for storage of results
 type MinLmfit <: RegressionModel
     coeff::Vector	# ols regression coefficients
