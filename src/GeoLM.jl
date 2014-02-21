@@ -1,20 +1,18 @@
-using StatsBase
-
 module GeoLM
 
-    using StatsBase
-    export                              # types
-        MinLmfit,
+using Stats
 
-                                        # functions
-        minlmfit,       # a minimal linear model fit
-        coef,           # extract estimated regression coefficients
-        resid,          # extract residuals
-        residuals,      # extract residuals
-        corr            # extract unscaled vcov for coef
+export
+	# types
+    MinLmfit,
 
-    abstract MinLmfit                  # Minimal linear model
+    # functions
+    minlmfit,       # a minimal linear model fit
+    coef,           # extract estimated regression coefficients
+    resid,          # extract residuals
+    residuals,      # extract residuals
+    corr            # extract unscaled vcov for coef
 
-    include("minlmfit.jl")
+include("minlmfit.jl")
 
 end # module
