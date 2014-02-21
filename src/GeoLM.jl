@@ -1,6 +1,6 @@
 module GeoLM
 
-using Stats
+using StatsBase
 
 export
 	# types
