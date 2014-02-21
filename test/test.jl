@@ -10,10 +10,9 @@ mylm = minlmfit(x, y)
 
 # extract characteristics of interest from MinLmfit object
 # corr is the scaled vcov matrix, i.e., inv(x'*x)
-coef(myfit)
-residuals(myfit)
-resid(myfit)
-corr(myfit)
+coef(mylm)
+residuals(mylm)
+resid(mylm)
+corr(mylm)
 
-#Pkg.clone("git://example.com/path/to/Package.jl.git")
-Pkg.clone("https://github.com/jpfrench81/GeoLM/src/GeoLM.jl")
+Pkg.clone("git://github.com/jpfrench81/GeoLM.jl.git")

@@ -3,7 +3,7 @@
 ## Installation
 
 ```julia
-Pkg.add("GeoLM")
+Pkg.clone("git://github.com/jpfrench81/GeoLM.jl.git")
 ```
 will install this package (eventually, I hope)
 
@@ -29,12 +29,12 @@ julia> mylm = minlmfit(x, y);
 Extract characteristics of interest from **MinLmfit** object.  **corr** extracts the scaled covariance matrix of the estimated regression coefficients, i.e., inv(x'*x).
 
 ```julia
-julia> coef(myfit)
+julia> coef(mylm)
 2-element Array{Float64,1}:
   7.79571 
  -0.622956
 
-julia> residuals(myfit)
+julia> residuals(mylm)
 10-element Array{Float64,1}:
  -0.387988 
  -0.14962  
@@ -47,7 +47,7 @@ julia> residuals(myfit)
  -0.155359 
   0.0962792
 
-julia> resid(myfit)
+julia> resid(mylm)
 10-element Array{Float64,1}:
  -0.387988 
  -0.14962  
@@ -60,7 +60,7 @@ julia> resid(myfit)
  -0.155359 
   0.0962792
 
-julia> corr(myfit)
+julia> corr(mylm)
 2x2 Array{Float64,2}:
   8.37495  -1.64447 
  -1.64447   0.326802
